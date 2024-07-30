@@ -47,6 +47,8 @@ public class TemoletConfigration implements WebMvcConfigurer, ApplicationContext
         registry.addResourceHandler("/images/**").addResourceLocations("/images/");
         registry.addResourceHandler("/css/**").addResourceLocations("/css/");
         registry.addResourceHandler("/js/**").addResourceLocations("/js/");
+        registry.addResourceHandler("/custom/**").addResourceLocations("classpath:/templates/custom/");
+        registry.addResourceHandler("/crud/**").addResourceLocations("classpath:/templates/crud/");
     }
 
     @Bean
